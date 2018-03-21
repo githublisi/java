@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url:jdbc: mysql://localhost:3306/dbgirl
+    username: root
+    password: root
+  redis:
+  artemis:
+    port: 6379
+    host: 192.168.146.128
+mybatis:
+  config-location: classpath:mybatis/SqlMapConfig.xml
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.xuexi.springboot.pojo
